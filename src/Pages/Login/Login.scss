@@ -1,0 +1,407 @@
+/* Fundo */
+.fundo_login {
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 100vh;
+  padding: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to left, #41748D, #335D7B);
+  width: 100%;
+  height: 100vh;
+  position: relative; /* Adicionado position */
+  overflow: hidden;
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 1;
+    border-radius: 100%;
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    opacity: 0;
+    border-radius: 50%;
+    transform: translateY(-1000px) rotate(720deg);
+  }
+}
+
+.circles div {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%; /* Adicionado border-radius para criar bolas redondas */
+  background: rgba(255, 255, 255, 0.2);
+  bottom: -150px;
+  animation: animate 25s linear infinite;
+}
+
+.circles div:nth-child(1){
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation: 0s;
+}
+
+.circles div:nth-child(2){
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation: 2s;  
+  animation-duration: 12s;
+}
+
+.circles div:nth-child(3){
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;  
+}
+
+.circles div:nth-child(4){
+  left: 80%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.circles div:nth-child(5){
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;    
+}
+
+.circles div:nth-child(6){
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;  
+  
+}
+
+.circles div:nth-child(7){
+  left: 30%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;    
+}
+
+.circles div:nth-child(8){
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;  
+}
+
+.circles div:nth-child(9){
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;  
+}
+
+.circles div:nth-child(10){
+  left: 7%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;  
+}
+
+.circles div:nth-child(11){
+  left: 20%;
+  width: 120px;
+  height: 120px;
+  animation-delay: 0s;
+  animation-duration: 19s;  
+}
+
+.circles div:nth-child(12){
+  left: 5%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;    
+}
+
+
+
+/* styles.scss */
+
+.conteudo_login {
+  width: 95vh;
+  height: 75vh;
+  background-color: #ffeeaf;
+  border: 0px solid #fff;
+  border-radius: 20px;
+  padding: 1vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tamanho_login{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 55vh;
+  
+}
+
+.digite_usuario{
+  display: flex;
+  flex-direction: row;
+}
+.digite_senha{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.logo_login {
+  width: 10vh;
+  height: 3vh;
+  align-self: start;
+  margin-left: 3vh;
+  margin-top: 1vh;
+}
+
+.titulo_login {
+  font-family: "Nunito", sans-serif;
+  margin-top:5%;
+  font-weight: 700;
+  font-size: 4vh;
+  margin-bottom: 3vh;
+}
+
+.esqueceuSenha {
+  background-color: #ffedaf;
+  border: 1.5px solid #131E19;
+  font-size: small;
+  border-radius: 10px;
+  color: #131E19;
+  width: 50%;
+  margin: auto;
+  margin-top: 4vh;
+  margin-bottom: 1vw;
+}
+
+.esqueceuSenha:hover {
+  background-color: #131E19;
+  border: 1.5px solid #f3fffd;
+  font-size: small;
+  border-radius: 10px;
+  color: #f3fffd;
+  width: 50%;
+  margin: auto;
+  margin-top: 4vh;
+  margin-bottom: 1vw;
+}
+
+.esqueceuSenha strong{
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+}
+
+.mensagem_erro{
+  color: rgba(255, 0, 0, 0.628) ;
+  margin-top: 1%;
+}
+
+.botoes_login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  width: 70vh;
+}
+
+.continuar_login {
+  background-color: #FFC658;
+  font-size: 18px;
+  border-radius: 10px;
+  color: #131E19;
+  width: 35vh;
+  height: 100%;
+  margin: auto;
+}
+
+.continuar_login .conteudo_botao{
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+}
+
+.continuar_login:hover {
+  background-color: #41748d;
+  font-size: large;
+  border-radius: 10px;
+  color: #f3fffd;
+  width: 35vh;
+  height: 35%;
+  margin: auto;
+}
+
+.conteudo_botao {
+  margin: auto;
+}
+
+.naoPossuiConta{
+  margin-top:4vh;
+  margin-bottom: 20%;
+  font-size: 16px;
+}
+
+.inputs_login {
+  margin: auto;
+  width: 55vh;
+  height: 7.5vh;
+}
+
+.input_login {
+  height: 7.5vh;
+  width: 30vw;
+  border: 1px solid #131E19;
+  text-align: left;
+  border-radius: 10px;
+  margin-top: 5%;
+  align-self: center;
+  background-color: #ffedaf;
+  font-size: x-large;
+}
+
+.input_login:focus-visible {
+  height: 7.5vh;
+  outline: #131E19;
+  text-align: left;
+  border-radius: 10px;
+  align-self: center;
+  background-color: var(--white);
+  font-size: x-large;
+}
+
+.input_senha {
+  height: 7.5vh;
+  width: 30vw;
+  margin-top: 2.5%;
+  border-radius: 10px;
+  background-color: #ffedaf;
+  border: 1px solid #131E19;
+  font-size: x-large;
+}
+.input_senha:focus-visible {
+  height: 7.5vh;
+  width: 30vw;
+  border-radius: 10px;
+  background-color: var(--white);
+  outline: #131E19;
+  font-size: x-large;
+}
+
+.icone_input_login {
+ /*  border: 1px solid #131E19; */
+  border-right: none;
+  height: 50px;
+  color: #41748D;
+  margin-top: 5%;
+  align-self: flex-start;
+  margin-right: 5%;
+  
+}
+
+
+
+.input_login_group{
+  border: 1px solid #131E19;
+  margin: 0;
+}
+.icone_login{
+  color: #131E19;
+}
+
+.usuario_login{
+  width: 58vh;
+  margin-bottom: 25px;
+}
+
+.usuario_senha{
+  width: 100vh;
+  margin-bottom: 25px;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 768px) {
+  .fundo_login {
+    padding: 50px;
+  }
+  .tamanho_login{
+    width: 75vh;
+  }
+  .logo_login {
+    width: 8vh;
+    height: 2vh;
+  }
+  .titulo_login {
+    font-size: 3vh;
+  }
+  .esqueceuSenha {
+    width: 60%;
+  }
+  .botoes_login {
+    width: 80vh;
+  }
+  .continuar_login {
+    width: 45vh;
+  }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+  .fundo_login {
+    padding: 40%;
+  }
+
+  .card-text{
+    width: 100vh;
+  }
+
+  .tamanho_login{
+    width: 20vh;
+    height: 20vh;
+  }
+  .logo_login {
+    width: 5%;
+    height: 5%;
+  }
+  .titulo_login {
+    font-size: 2.5vh;
+    margin-top: 100px;
+  }
+  .esqueceuSenha {
+    margin-bottom: 20%;
+    width: 40%;
+  }
+  .botoes_login {
+    width: 50vh;
+  }
+  .continuar_login {
+    width: 55%;
+  }
+}

@@ -1,0 +1,55 @@
+@import '../../../settings.scss';
+
+.list {
+  background-color: var(--white);
+  padding: $gap;
+  border-radius: $card-border-radius;
+  box-shadow: 0 3px 4px 1px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  margin-bottom: $gap;
+  width: 98%;
+  margin-left: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+ 
+
+  .img_list {
+    display: block;
+
+    width: calc(100% + 2 * #{$gap});
+    margin: -$gap 0 $gap (
+      -$gap
+    );
+
+  border-bottom-left-radius: $card-border-radius;
+  border-bottom-right-radius: $card-border-radius;
+}
+}
+
+.checkbox-container {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.checkbox-container input {
+  display: none;
+}
+
+.checkbox-container .checkmark {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--aquablue);
+  border-radius: 3px;
+  text-align: center;
+  line-height: 18px;
+}
+
+.checkbox-container input:checked + .checkmark::after {
+  content: '\f00c';
+  font-family: 'Font Awesome';
+  font-size: 14px;
+  color: var(--white);
+}

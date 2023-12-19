@@ -1,0 +1,225 @@
+.rodape .row {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.rodape {
+    background-color: #131E19;
+    bottom: 0px;
+}
+
+.rodape_col .LogoTipo img {
+    width: 34%;
+    height: auto;
+    margin-top: 33px;
+    left: 41px;
+    object-fit: cover !important;
+}
+
+.rodape_col .LogoTipo h1 {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.linhadivisoria {
+    color: #ffffff;
+    width: 60%;
+    padding: 0px !important;
+    margin: 10px 0px;
+}
+
+.rodape_col .social-links {
+    display: inline-block;
+    text-align: center;
+}
+
+.rodape_LinksUteis h1 {
+    margin-top: 33px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.rodape_LinksUteis ul li {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 400;
+    list-style-type: none;
+    padding: 0.5% 0px;
+}
+
+.rodape_BoletimNoticias h1 {
+    margin-top: 27px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.rodape_BoletimNoticias p {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.Formulario .Email {
+    padding-right: 0px;
+}
+
+.Formulario .Email .form-control {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    height: 98%;
+}
+
+.Formulario .Botao {
+    padding-left: 0px;
+}
+
+.Formulario .Botao .btn-primary {
+    background-color: #FF6A13;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    height: 98%;
+}
+
+.Formulario .Botao .btn-primary::after {
+    background-color: #FF6A13;
+}
+
+.Formulario .CheckBoxNoticias label {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.direitos-reservados {
+    justify-content: center;
+    display: flex;
+    background-color: #131E19;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+
+.direitos-reservados h1 {
+    margin-bottom: 1%;
+    margin-right: 2%;
+    font-size: 18px;
+    color: #a8a29e;
+}
+
+.social-links {
+    width: 50%;
+    display: inline;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 1%;
+
+}
+
+.icon {
+    padding-right: 3%;
+    padding-left: 5%;
+    border-radius: 20px;
+    color: #41748D;
+}
+
+/*responsividade*/
+
+@media (max-width:1600px) {
+    .rodape_col .LogoTipo img {
+        width: 30%;
+        height: auto;
+        margin-top: 33px;
+        left: 10px;
+    }
+
+
+    .icon {
+        width: 15%;
+        padding-left: 5%;
+        border-radius: 20px;
+    }
+
+    .social-links {
+        width: 50%;
+        display: inline;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 1%;
+        margin-left: 5%;
+
+    }
+
+    .rodape_BoletimNoticias .Formulario {
+        display: inline;
+    }
+    
+
+    .rodape .row .rodape_BoletimNoticias .Formulario .Email {
+        width: 50%;
+        margin-right: -5%;
+    }
+
+    .rodape .row .rodape_BoletimNoticias .Formulario .Botao {
+        width: 40%;
+    }
+
+}
+
+/*responsividade cell*/
+@media (max-width:700px) {
+    .rodape_col .LogoTipo{
+        width: 110%;
+        align-self: center;
+    }
+    .social-links {
+        width: 100%;
+        display: inline;
+        flex-direction: column;
+        align-items: center;
+        margin-left: -18px;
+    }
+
+}
+
+@media (max-width:450px) {
+    .rodape_col .LogoTipo{
+        width: 155%;
+        align-self: center;
+        margin-left: 15%;
+    }
+
+    .rodape_col .LogoTipo h1{
+        margin-left: -15%;
+    }
+    .rodape_col .LogoTipo hr{
+        margin-left: -15%;
+    }
+
+    .social-links {
+        width: 90%;
+        display: inline;
+        flex-direction: column;
+        align-items: center;
+        margin-left: -10px;
+    }
+}

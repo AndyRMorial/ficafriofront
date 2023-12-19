@@ -1,0 +1,334 @@
+@import "../../settings.scss";
+
+/*Sobre nós Início*/
+
+.sobrenos {
+  margin-top: 7%;
+  padding-bottom: 5%;
+}
+
+.quem_somos {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo_quemsomos {
+  margin-bottom: 25px;
+  font-weight: bold;
+  color: #41748d;
+  font-family: "Quicksand", sans-serif;
+}
+
+.texto_quemsomos {
+  padding: 0;
+  width: 100vh;
+  margin: auto;
+  padding-right: 50px;
+  font-size: x-large;
+}
+
+.simbolo_proa {
+  margin: auto;
+  background-color: #41748d;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.proa {
+  width: 50%;
+  margin: auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.texto2_sobrenos{
+  margin-left: 4%;
+}
+
+/*Sobre nós Fim*/
+
+/*Nossa missão Início*/
+
+.nossa_missao {
+  width: 100%;
+  background-color: #ffc658;
+  background-image: url("../../assets/nossamissaofundo.png");
+  background-repeat: no-repeat;
+  height: 50%;
+  margin-top: 2%;
+  padding: 0 10%;
+}
+
+.texto_nossamissao {
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: xx-large;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10%;
+}
+
+/*Nossa missão Fim*/
+
+/*Valores Início*/
+
+.valores_sobrenos {
+  width: 100%;
+  margin-top: 2.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+  text-align: center;
+}
+
+  /*Valores Cards Inicio*/
+
+.coluna_cards_sobrenos{
+  padding: 0 4%;
+}
+
+.cards_conteudo_sobrenos{
+  width: 100%;
+  margin-top: 2.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #F3FFFD;
+  border-radius: 20px !important;
+  border-color: #41748d;
+  color: #41748d;
+}
+
+.conteudo_card_sobrenos{
+  text-align: center;
+  margin: 5% 3%;
+}
+
+.titulo_cards_sobrenos{
+  font-family: "Nunito", sans-serif;
+  font-size: 150%;
+  font-weight: 700;
+}
+
+.texto_cards_sobrenos{
+  font-family: "Quicksand", sans-serif;
+  font-size: 120%;
+}
+
+  /*Valores Cards Fim*/
+
+/*Valores Fim*/
+
+/*Visão Início*/
+
+.nossa_visao {
+  width: 100%;
+  background-color: #41748d;
+  background-image: url("../../assets/fundovisao.png");
+  background-repeat: no-repeat;
+  height: 50%;
+  margin-top: 2%;
+  padding: 0 10%;
+  color:#F3FFFD;
+}
+
+/*Visão Fim*/
+
+/*Equipe Início*/
+
+.equipe_link{
+  text-decoration: none;
+}
+
+.coluna_cards_equipe_sobrenos{
+  padding: 0 1%;
+  height: auto;
+  display: flex;
+  border: none;
+}
+
+.cards_equipe_sobrenos{
+  width: 100%;
+  margin-top: 2.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #F3FFFD;
+  border: none;
+}
+
+.conteudo_equipe_sobrenos{
+  margin-top: 8%;
+  direction: rtl;
+  text-align: right;
+  margin-right: 2%;
+}
+
+.imagem_equipe_sobrenos,
+.imagem_equipe_sobrenos2{
+  margin: 5% 0;
+  align-items: flex-start;
+  justify-content: center;
+  width: 150%;
+  height: 150%;
+  height: auto;
+  max-width: 120%;
+}
+
+.titulo_cards_equipe_sobrenos{
+  font-family: "Nunito", sans-serif;
+  font-size: 400%;
+  font-weight: 700;
+  color: #41748d;
+}
+
+.texto_cards_equipe_sobrenos{
+  font-family: "Quicksand", sans-serif;
+  font-size: 220%;
+}
+
+.titulo_cards_equipe_sobrenos2{
+  margin-left: 10%;
+  margin-top: 12%;
+  font-family: "Nunito", sans-serif;
+  font-size: 400%;
+  font-weight: 700;
+  color: #41748d;
+}
+
+.texto_cards_equipe_sobrenos2{
+  margin-left: 10%;
+  font-family: "Quicksand", sans-serif;
+  font-size: 220%;
+}
+
+
+
+@media (max-width: 1608px){
+  .texto_cards_equipe_sobrenos,
+  .texto_cards_equipe_sobrenos2{
+    font-size: 200%;
+  }
+
+  .titulo_cards_equipe_sobrenos,
+  .titulo_cards_equipe_sobrenos2{
+    font-size: 375%;
+  }
+}
+
+@media (max-width: 1484px){
+  .texto_cards_equipe_sobrenos,
+  .texto_cards_equipe_sobrenos2{
+    font-size: 180%;
+  }
+
+  .titulo_cards_equipe_sobrenos,
+  .titulo_cards_equipe_sobrenos2{
+    font-size: 350%;
+  }
+}
+
+@media (max-width: 1342px){
+  .texto_cards_equipe_sobrenos,
+  .texto_cards_equipe_sobrenos2{
+    font-size: 175%;
+  }
+
+  .titulo_cards_equipe_sobrenos,
+  .titulo_cards_equipe_sobrenos2{
+    font-size: 325%;
+  }
+
+  .titulo_cards_equipe_sobrenos2{
+    margin-top: 6%;
+  }
+}
+
+@media (max-width: 1200px){
+  .texto_cards_equipe_sobrenos,
+  .texto_cards_equipe_sobrenos2{
+    font-size: 160%;
+  }
+
+  .titulo_cards_equipe_sobrenos,
+  .titulo_cards_equipe_sobrenos2{
+    font-size: 310%;
+  }
+
+  .titulo_cards_equipe_sobrenos2{
+    margin-top: 2%;
+  }
+}
+
+@media (max-width: 1100px){
+  .texto_cards_equipe_sobrenos,
+  .texto_cards_equipe_sobrenos2{
+    font-size: 140%;
+  }
+
+  .titulo_cards_equipe_sobrenos,
+  .titulo_cards_equipe_sobrenos2{
+    font-size: 290%;
+  }
+
+  .titulo_cards_equipe_sobrenos{
+    margin-top: -7%;
+  }
+}
+
+@media (max-width: 1000px){
+  .texto_cards_equipe_sobrenos,
+  .texto_cards_equipe_sobrenos2{
+    font-size: 120%;
+  }
+
+  .titulo_cards_equipe_sobrenos,
+  .titulo_cards_equipe_sobrenos2{
+    font-size: 220%;
+  }
+}
+
+@media (max-width: 768px){
+  .coluna_cards_equipe_sobrenos{
+    justify-content: center;
+  }
+
+  .cards_equipe_sobrenos{
+    width: 100%;
+  }
+  
+  .imagem_equipe_sobrenos{
+    width: 30%;
+    margin-left: 70%;
+  }
+
+  .imagem_equipe_sobrenos2{
+    width: 30%;
+    margin-left: 2%;
+  }
+
+  .titulo_cards_equipe_sobrenos2{
+    margin-left: 2%;
+  }
+
+  .texto_cards_equipe_sobrenos2{
+    margin-left: 2%;
+  }
+}
+
+@media (max-width: 576px){
+  .quem_somos{
+    padding: 10%;
+  }
+}

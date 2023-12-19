@@ -1,0 +1,291 @@
+.planos{
+    background: (var(--white));
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 3%;
+    justify-content: center;
+}
+/* fim configurações gerais */
+.container_plano{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:4vh;
+}
+
+.h2_plano{
+    padding: 0;
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+    color: var(--darkorange);
+    font-size: 200%;
+    font-weight: 800;
+}
+
+.botao{
+       color: var(--white);
+       background-color: transparent;
+       position: relative;
+       border: none;
+       font-size: 150%;
+}
+
+.grupo-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    border-radius: 5vh;
+    padding: 1%;
+    width: 40%;
+    background-color:var(--black);
+
+}
+
+#btn{
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    width: 50%;
+    border-radius: 5vh;
+    background-color: var(--blue);
+    transition: .5s;
+}
+
+.grupo-cards{
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    height: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+/* //Estilização cards// */
+.card-amarelo , .card-azul {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5%;
+    margin: 0;
+    margin-bottom: 10%;
+    border-radius: 5vh;
+    height: auto;
+    width: 40%;
+    filter: drop-shadow(0 3vh 0.7vh rgba(20, 30, 41, 0.28));
+}
+
+.card-amarelo h2 , .card-azul h2{
+    font-size: 170%;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    margin: 0;
+}
+
+.card-amarelo{
+    background-color: var(--yellow);
+    color: #532800;
+}
+
+.card-azul{
+    background-color: var(--aquablue);
+    color: #031E2E;
+}
+/* //Fim estilização cards// */
+
+/* //Estilização cards-content// */
+
+.card-content{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.content-info{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.texto-content, .texto-animated{
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    font-size: 150%;
+    width: 20rem;
+    height: auto;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.card-content ul{
+    width: 90%;
+    margin: 0;
+    padding: 0;
+}
+
+.card-content li{
+    list-style-type: none;
+    font-family: "Quicksand", sans-serif ;
+    font-weight: 600;
+    font-size: 110%;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    padding: 1vh 0 1vh 0;
+}
+
+
+
+.card-content img{
+    width: 6%;
+    margin-right: 3%;
+}
+
+.card-content .icone{
+    width: 60%;
+    height: 60%;
+    margin: 0;
+    padding: 0;
+    object-fit:fill;
+    margin-bottom: 6%;
+}
+
+.botao-azul, .botao-amarelo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 3.5rem;
+    border: none;
+    margin: 0;
+    margin-top: 2rem;
+    padding: 0;
+    border-radius: 2.9vh;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: 110%;
+}
+
+.botao-azul{
+    color: var(--aquablue);
+    background-color: #031E2E;
+    transition: 0.2s;
+}
+
+.botao-amarelo{
+    color: var(--yellow);
+    background-color: #532800;
+    transition: 0.2s;
+}
+
+.card-content .botao-azul:hover{
+    border: 0.2rem solid #031E2E ;
+    color: #031E2E;
+    background-color: var(--aquablue);
+}
+
+.card-content .botao-amarelo:hover{
+    border: 0.2rem solid #532800 ;
+    color: #532800;
+    background-color: var(--yellow);
+}
+
+/*Fim estilização - Inicio responsividade*/
+
+@media (max-width:1360px){
+    .container_plano{
+        width: 95%;
+    }
+
+    .botao{
+        font-size: 120%;
+    }
+
+    .grupo-btn {
+        width: 70%;
+    }
+
+    .card-content .icone{
+        width: 40%;
+    }
+
+    .botao-azul,.botao-amarelo{
+        height: 2.5rem;
+    }
+}
+
+@media (max-width:891px){
+    .card-amarelo,.card-azul{
+        width: 60%;
+    }
+    .botao-amarelo,.botao-azul{
+         margin-top: 1rem;
+    }
+}
+
+@media (max-width:620px){
+    .container_plano{
+        width: 100%;
+    }
+    .grupo-cards{
+        width: 100%;
+    }
+    .h2_plano{
+        font-size: 170%;
+    }
+    .card-content .icone{
+        width: 25%;
+    }
+    .card-amarelo,.card-azul{
+        width: 70%;
+    }
+}
+
+@media (max-width:465px){
+.h2_plano{
+    font-size: 150%;
+}
+.card-content{
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+.botao{
+    font-size: 100%;
+}
+
+.card-amarelo h2, .card-azul h2{
+    font-size: 150%;
+}
+
+.texto-animated, .texto-content{
+    font-size: 120%;
+}
+
+.card-content li{
+    font-size: 100%;
+}
+
+.botao-amarelo,.botao-azul{
+    height: 2rem;
+    font-size: 100%;
+    margin-top: 0.2rem;
+}
+}

@@ -1,0 +1,74 @@
+.titulo_perfil{
+    font-family: "Nunito", sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.botoes_perfil button {
+    font-family: "Quicksand", sans-serif;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: none; 
+    outline: none;
+    background: none;
+    padding: 8px 0;
+    border-bottom: 4px solid transparent;
+    color: var(--black);
+    cursor: pointer;
+    position: relative;
+    top: -160px;
+    left: -160px;
+}
+
+.botoes_perfil button.botao-ativo {
+    border-bottom: 4px solid var(--black);
+}
+
+.botoes_perfil button:hover {
+    background-color: var(--white);
+}
+
+.linha_perfil{
+    border-top: 3px solid var(--black);
+    margin: 20px -160px;
+    margin-top: -173px;
+}
+
+.conteudo_perfil {
+    display: none;
+    margin-top: 10px;
+}
+
+.conteudo_perfil.ativo {
+    display: block;
+}
+
+.informacao_perfil{
+    width: 450px;
+    margin-left: -160px;
+}
+
+.senha_perfil{
+    width: 450px;
+}
+
+.informacao_perfil h2, .senha_perfil h2{
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+.botaoTrocaSenha{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    width: 100%;
+    background-color: #FFC658;
+    font-size: 18px;
+    border-radius: 10px;
+    color: #131E19;
+    width: 50%;
+    height: 100%;
+    margin: auto;
+}

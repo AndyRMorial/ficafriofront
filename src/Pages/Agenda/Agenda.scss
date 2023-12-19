@@ -1,0 +1,122 @@
+@import '../../settings.scss';
+
+.agenda {
+  margin-top: 7%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10px;
+}
+
+.menu_tarefas_agenda{
+  align-items: center;
+  padding: 1%;
+}
+
+.botao_addagenda {
+  background-color: var(--yellow);
+  border-color: var(--verdeclaro);
+  height: 18vh;
+  width: 100%;
+  font-size: xx-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--black);
+}
+
+.botao_addagenda:hover{
+  background-color: var(--aquablue);
+  color: var(--darkblue);
+}
+
+.botao_addagenda2 {
+  background-color: var(--yellow);
+  border-color: var(--verdeclaro);
+  height: 78px;
+  font-size: xx-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--black);
+  margin-left: -10px;
+  width: 100%;
+}
+
+.botao_addagenda2:hover{
+  background-color: var(--aquablue);
+  color: var(--darkblue);
+}
+
+.coluna_concluida {
+  height: 132px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F98D5F;
+  border-radius: 7px;
+  color: var(--black);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.tarefas_concluidas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+}
+
+.form-control-agenda {
+  margin-top: 15px;
+  width: 92%;
+  margin-right: 10px;
+  background-color: white;
+  border: 2px solid var(--blue);
+}
+
+.cria_agenda {
+  display: flex;
+  align-items: center;
+}
+
+.x_agenda {
+  height: 25px;
+  margin-top: 15px;
+  cursor: pointer;
+
+}
+
+.lista_tarefas {
+  background-color: var(--white);
+  display: flex;
+  margin: 0 $gap $gap 0;
+  margin-top: 5%;
+  gap: 10px;
+  overflow-x: auto;
+  width: calc(75vw - 50px - 40px - #{$gap});
+  height: 50vh;
+
+
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+
+  &::-webkit-scrollbar:horizontal {
+    height: 11px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--verdeclaro);
+    border-right: 5px solid var(--white);
+    background-clip: padding-box;
+  }
+
+  .coluna-drop-preview {
+    background-color: rgba(150, 150, 200, 0.1);
+    border: 1px dashed #abc;
+    margin: 5px 45px 5px 5px;
+  }
+}

@@ -1,0 +1,659 @@
+/*Banner inicio*/
+body{
+  overflow-x: hidden;
+}
+.landin_page{  
+  display: flex;
+  flex-flow: column;
+}
+
+.landin_page .banner {
+  background-color: #F3FFFD;
+  background-image: url(../../assets/background1.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding-right: 25px;
+}
+
+.texto_banner_landing{
+  margin-top: 17px;
+}
+
+.banner_ajuste{
+  display: flexbox;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 0;
+}
+
+.frase_banner {
+  display: flex;
+  justify-content: space-between;
+  text-align: end;
+  color:#F3FFFD ;
+  font-size: large;
+  padding-top: 2%;
+  font-size: 25px;
+}
+
+.penguin_landing{
+  width: 35vw;
+  margin-top: 5vh;
+}
+
+.botao_landin {
+  background-color: #F3FFFD !important;
+  border-color: #41748d !important;
+  color:#41748d !important;
+  width: 75%;
+  margin: 0;
+}
+
+.botao_landin:hover {
+  background-color: #41748d !important;
+  color: #F3FFFD !important;
+}
+
+/*Banner fim*/
+
+/*Cartaz 1 Inicio*/
+
+.landin_page .bloco_cartaz{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartaz1{
+  background-color: #5C9FB4;
+  width: 100%;
+  border-radius: 25px;
+  box-shadow: 4px 4px 6px 5px #141e2937;
+}
+
+.texto_titulo_friatranquilo{
+  font-style: bold;
+  font-weight: 800;
+  margin-top: 2%;
+  padding: 3%;
+}
+
+.text_friatranquilo{
+  margin-top: 5%;
+  font-weight: 400;
+}
+
+.texto_cartaz {
+  font-size: x-large;
+  padding: 3% ;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #F3FFFD;
+}
+
+.botao_landin2 {
+  width: 50%;
+  background-color: #41748d;
+  border-color: #41748d;
+  margin: 0;
+  margin-top: 3%;
+  border-radius: 7px;
+  box-shadow: none;
+}
+
+.botao_landin2:hover {
+  background-color: #f3fffd;
+  border-color: #41748d;
+  color: #41748d;
+}
+
+.img_cartaz1 {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+}
+
+.img_landin {
+  margin: auto;
+  height: 100%;
+  width: 75%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_friatranquila{
+  height: 90%;
+  padding: auto;
+}
+
+/*Cartaz 1 Fim*/
+
+/*Cartazes Pequenos Começo*/
+
+.img_ted{
+  margin: 5% 10%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 22vh;
+  height: auto;
+}
+
+.cartaz_cards_pequenos{
+  margin: 0;
+  margin-right: 2%;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.economize,
+.porque_nos,
+.estresse{
+  border-radius: 20px !important;
+  height: 650px;
+  margin-bottom: 10vh;
+  margin-top: 2vh;
+}
+
+.economize img,
+.porque_nos img,
+.estresse img{
+  width: 50%;
+  margin-left: 25%;
+}
+
+.estresse img{
+  width: 60%;
+  margin-left: 20%;
+}
+
+.economize{
+  background: #500856;
+  box-shadow: 4px 4px 6px 5px #141e2937;
+  
+}
+
+.porque_nos{
+  background: #41748D;
+  box-shadow: 4px 4px 6px 5px #141e2937;
+}
+
+.estresse{
+  background: #8B3E26;
+  box-shadow: 4px 4px 6px 5px #141e2937;
+}
+
+.colunas_cards_pequenos1,
+.colunas_cards_pequenos2,
+.colunas_cards_pequenos3{
+  color: #F3FFFD;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.titulo_cards_pequenos1,
+.titulo_cards_pequenos2,
+.titulo_cards_pequenos3{
+  color: #F3FFFD;
+  font-size: 180%;
+  font-weight: 800;
+}
+
+.titulo_cards_pequenos1{
+  margin-top: 1%;
+}
+
+.titulo_cards_pequenos3{
+  margin-top: -4%;
+}
+
+.texto_cards_pequenos1,
+.texto_cards_pequenos2,
+.texto_cards_pequenos3{
+  color: #F3FFFD;
+  font-size: 125%;
+}
+
+.botao_saibamais_cards_pequeno1,
+.botao_saibamais_cards_pequeno2,
+.botao_saibamais_cards_pequeno3{
+  background-color: #F3FFFD;
+  border-color: #F3FFFD;
+  margin: 0;
+  margin-top: 5%;
+  width: 75%;
+}
+
+.botao_saibamais_cards_pequeno1{
+  margin-top: 10%;
+  color:  #500856;
+}
+
+.botao_saibamais_cards_pequeno2{
+  color:  #41748D;
+}
+
+.botao_saibamais_cards_pequeno3{
+  color:  #8B3E26;
+}
+
+.botao_saibamais_cards_pequeno1:hover{
+  background-color:#500856 ;
+  color:  #F3FFFD ;
+  border-color: #F3FFFD;
+}
+
+.botao_saibamais_cards_pequeno2:hover{
+  background-color: #41748D;
+  color: #F3FFFD ;
+  border-color: #F3FFFD;
+}
+
+
+
+.botao_saibamais_cards_pequeno3:hover{
+  background-color: #8B3E26 !important;
+  color:  #F3FFFD;
+  border-color: #F3FFFD;  
+}
+
+/*Cartazes Pequenos Fim*/
+
+/*Responsividade*/
+
+@media (max-width:1600px) {
+  /*Banner*/
+  .texto_banner_landing{
+    margin-top: 20px;
+  }
+
+  .paragrafo_banner_landing1,
+  .paragrafo_banner_landing2{
+    font-size: 110%;
+  }
+
+  /*Cards Pequenos*/
+
+  .botao_saibamais_cards_pequeno1{
+    margin-top: 6.6vh;
+  }
+
+  .texto_cards_pequenos{
+    margin-top: 3vh;
+  }
+}
+
+@media (max-width:1400px){
+  /*Banner*/
+
+  .titulo_banner_landing{
+    font-size: 130%;
+  }
+
+  .titulo_banner_landing h1{
+    font-size: 110%;
+  }
+
+  .landing_page_banner_completo{
+    width: 5%;
+  }
+
+  .paragrafo_banner_landing1,
+  .paragrafo_banner_landing2{
+    font-size: 90%;
+  }
+
+  .texto_banner_landing{
+    margin-top: 3%;
+  }
+
+  /*Cards Pequenos*/
+
+  .texto_cards_pequenos1,
+  .texto_cards_pequenos2{
+    margin-top: 2%;
+  }
+
+  .texto_cards_pequenos3{
+    margin-top: 13%;
+  }
+
+  .economize,
+  .porque_nos,
+  .estresse{
+    height: 710px;
+  }
+
+  .botao_saibamais_cards_pequeno1{
+    margin-top: 34.5%;
+  }
+}
+
+@media (max-width:1200px){
+  /*Banner*/
+
+  .frase_banner{
+    margin-right: -3%;
+  }
+
+  .paragrafo_banner_landing1{
+    display: none;
+  }
+
+  .titulo_banner_landing{
+    font-size: 110%;
+  }
+
+  .titulo_banner_landing h1{
+    font-size: 100%;
+  }
+
+  .paragrafo_banner_landing1,
+  .paragrafo_banner_landing2{
+    font-size: 90%;
+  }
+
+  .texto_banner_landing{
+    margin-top: 5%;
+  }
+
+  /*Cards Pequenos*/
+
+  .texto_cards_pequenos1,
+  .texto_cards_pequenos2{
+    margin-top: 2%;
+  }
+
+  .colunas_cards_pequenos1,
+  .colunas_cards_pequenos2,
+  .colunas_cards_pequenos3{
+    margin-left: 1%;
+  }
+
+  .economize,
+  .porque_nos,
+  .estresse{
+    width: 130%;
+  }
+
+  .economize{
+    margin-right: 80%;
+  }
+
+  .porque_nos{
+    margin-left: 70%;
+  }
+
+  .estresse{
+    margin-right: 10%;
+  }
+
+  .botao_saibamais_cards_pequeno1{
+    margin-top: 6vh;
+  }
+    
+}
+
+@media (max-width:992px){
+  /*Banner*/
+
+  .titulo_banner_landing{
+    font-size: 100%;
+  }
+
+  .paragrafo_banner_landing1,
+  .paragrafo_banner_landing2{
+    font-size: 75%;
+  }
+  
+  .botao_landin{
+    width: 70%;
+  }
+
+  .penguin_landing{
+    margin-top: 40%;
+  }
+
+  /*Card1*/
+
+  .img_landin{
+    margin-top: 25%;
+  }
+
+  .texto_titulo_friatranquilo{
+    text-align: center;
+  }
+
+  .text_friatranquilo{
+    text-align: center;
+  }
+
+  /*Cards Pequenos*/
+
+  .texto_cards_pequenos1,
+  .texto_cards_pequenos2{
+    margin-top: 2%;
+  }
+
+  .colunas_cards_pequenos1,
+  .colunas_cards_pequenos2,
+  .colunas_cards_pequenos3{
+    margin-left: 1%;
+  }
+
+  .economize,
+  .porque_nos,
+  .estresse{
+    width: 170%;
+  }
+
+  .economize{
+    margin-right: 80%;
+  }
+
+  .porque_nos{
+    margin-left: 70%;
+  }
+
+  .estresse{
+    margin-right: 10%;
+  }
+
+  .botao_saibamais_cards_pequeno1{
+    margin-top: 34%;
+  }
+
+  .botao_saibamais_cards_pequeno2{
+    margin-top: 14.5%;
+  }
+}
+
+@media (max-width:833px){
+  /*Apenas Banner*/
+  .texto_banner_landing{
+    margin-top: -1%;
+  }
+
+  .paragrafo_banner_landing2{
+    margin-top: -7%;
+    font-size: 70%;
+  }
+
+  .botao_landin{
+    margin-top: -8%;
+  }
+}
+
+@media (max-width:768px){
+  /*Banner*/
+
+  .frase_banner{
+    margin-right: -5%;
+  }
+
+  .titulo_banner_landing{
+    font-size: 80%;
+    margin-top: 5%;
+  }
+
+  .paragrafo_banner_landing1,
+  .paragrafo_banner_landing2{
+    font-size: 60%;
+  }
+  
+  .botao_landin{
+    width: 70%;
+  }
+
+  .penguin_landing{
+    margin-top: 40%;
+  }
+
+  /*Card1*/
+
+  .img_landin{
+    margin-top: -3%;
+  }
+
+  .texto_titulo_friatranquilo{
+    text-align: center;
+    font-size: 120%;
+  }
+
+  .text_friatranquilo{
+    text-align: center;
+    font-size: 90%;
+  }
+
+  /*Cards Pequenos*/
+
+  .colunas_cards_pequenos1,
+  .colunas_cards_pequenos2,
+  .colunas_cards_pequenos3{
+    margin-left: 20%;
+  }
+
+
+  .economize,
+  .porque_nos,
+  .estresse{
+    width: 280%;
+  }
+
+  .economize{
+    margin-right: 80%;
+  }
+
+  .porque_nos{
+    margin-left: -80%;
+  }
+
+  .estresse{
+    margin-right: 80%;
+  }
+
+  .botao_saibamais_cards_pequeno1{
+    margin-top: 22%;
+  }
+}
+
+@media (max-width:672px){
+  /*Apenas Banner*/
+
+  .frase_banner{
+    margin-right: -5%;
+  }
+
+  .titulo_banner_landing{
+    font-size: 80%;
+    margin-top: 5%;
+  }
+
+  .titulo_banner_landing h1{
+    font-size: 120%;
+  }
+
+  .paragrafo_banner_landing2{
+    display: none;
+  }
+  
+  .botao_landin{
+    width: 80%;
+  }
+
+  .penguin_landing{
+    margin-top: 40%;
+  }
+}
+
+@media (max-width:576px){
+   .penguin_landing{
+    margin-right: -10%;
+    margin-top: 2%;
+    transform: scaleX(-1);
+  }
+
+  .frase_banner{
+    width: 100%;
+  }
+
+  .titulo_banner_landing{
+    margin-top: -75%;
+    margin-left: 1%;
+    color: var(--black);
+    font-size: 63%;
+  }
+
+  .titulo_banner_landing h1{
+    margin-right: 30%;
+    margin-bottom: -2%;
+    font-size: 130%;
+  }
+
+  .botao_landin{
+    margin-left: 175%;
+    margin-top: -197%;
+    width: 50%;
+  } 
+
+  .cartaz1{
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+
+@media (max-width:500px){
+  .titulo_banner_landing{
+    margin-left: 8%;
+  }
+
+  .botao_landin{
+    width: 60%;
+    margin-top: -220%;
+  }
+
+  .economize{
+    margin-right: 60%;
+  }
+
+  .porque_nos{
+    margin-left: -60%;
+  }
+
+  .estresse{
+    margin-right: 60%;
+  }
+}

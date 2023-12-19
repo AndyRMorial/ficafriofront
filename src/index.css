@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Nunito", sans-serif;
+  font-family: "Quicksand", sans-serif ;
+}
+
+:root{
+  --blue: #41748D;
+  --black: #131E19;
+  --white: #F3FFFD;
+  --orange: #FF6A13;
+  --yellow: #FFC658;
+  --grey: #7F7D8D;
+  --darkblue: #0B2F51;
+  --lightorange: #FF8C4B;
+  --lightyellow: #FDFF9E;
+  --darkorange: #AF4100;
+  --aquablue: #63CAB9;
+  --verdeclaro: #ACDAD2;
+  --roxo: #BB71CE;
+}
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  padding: 0 ;
+  margin: 0 ;
+}
+
+.btn.show{
+  border: none;
+}
+
+.btn:first-child:active{
+  border: none;
+}
+
+button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+:not(.btn-check)+.btn:active {
+  background-color: transparent; 
+  border: transparent; 
+}
+
+.btn:first-child:active{
+  background-color: var(--blue);
+  border-color: var(--blue);
+}
+
+.customize-input-coluna {
+  border: none;
+  cursor: pointer;
+  &:focus{
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+background-color: inherit;
+}
+
+
+.btn-primary {
+  background-color: var(--blue);
+  border-color: var(--blue);
+  margin-right: 30px;
+  border-radius: 7px;
+  box-shadow: none;
+}
+
+.btn-primary:after {
+  background-color: var(--blue);
+  border-color: var(--blue);
+  margin-right: 30px;
+  border-radius: 7px;
+  box-shadow: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--white);
+  border-color: var(--blue);
+  color: var(--blue);
+}
+.btn-secondary{
+  background-color: var(--aquablue);
+  border-color: var(--aquablue);
+  margin-right: 30px;
+  border-radius: 7px;
+  box-shadow: none;
+}
+.form-control {
+  background: none;
+}
+.input-group-text {
+  background: none;
+}
+.navbar-brand{
+  margin: 0;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.texto-animated {
+  animation: fade 0.5s ease-in-out;
+}
+
+.form-control:focus{
+  border-color: transparent;
+  box-shadow:   none;
+}

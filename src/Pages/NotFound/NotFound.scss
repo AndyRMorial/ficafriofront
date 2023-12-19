@@ -1,0 +1,129 @@
+.fundo404{
+    background-color: #f3fffd; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.errorFound .img_notFound{
+    width: 300px;
+    float: left;
+}
+
+.text_notfound{
+    display: inline-block;
+    margin-left: 50px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.text_notfound .h1_notFound{
+    height: 15vh;
+    font-family: "Nunito", sans-serif;
+    position: relative;
+    font-weight: 700;
+    font-size: 54px;
+    padding-bottom: 25px;
+    color: #131E19;
+}
+
+.text_notfound .h1_notFound .span__notFound2{
+    font-size: 98px;
+    color: #FF6A13;
+}
+
+.text_notfound .h2_notFound{
+    margin: 20px;
+    font-family: "Quicksand", sans-serif;
+    color: #131E19;
+    font-size: 34px;
+}
+
+.text_notfound .h3_notFound{
+    margin: 20px;
+    font-family: "Quicksand", sans-serif;
+    font-size: 24px;
+    color: #131E19;
+    word-wrap: break-word;
+}
+
+.text_notfound .h3_notFound .span__notFound{
+    color: #41748D;
+    font-weight: bold;
+}
+
+/* Responsividade para telas até 1024 px*/
+@media (max-width: 1024px){
+
+    .errorFound .img_notFound{
+        width: 300px;
+    }
+    .text_notfound{
+        display: flex;
+        flex-direction: column;
+    }
+    .text_notfound .h1_notFound{
+        font-size: 34px;
+    }
+    .text_notfound .h1_notFound .span__notFound2{
+        font-size: 40px;
+    }
+    .text_notfound .h2_notFound{
+        font-size: 24px;
+    }
+    .text_notfound .h3_notFound{
+        font-size: 18px;
+    }
+}
+
+/* Responsividade para tablets */
+@media (max-width: 768px) {
+    .errorFound{
+        margin: 10px;
+    }
+    .errorFound .img_notFound{
+        width: 200px;
+    }
+    .text_notfound .h1_notFound{
+        font-size: 34px;
+    }
+    .text_notfound .h1_notFound .span__notFound2{
+        font-size: 40px;
+    }
+    .text_notfound .h2_notFound{
+        font-size: 24px;
+        margin-top: -60px;
+    }
+    .text_notfound .h3_notFound{
+        font-size: 18px;
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+
+    .errorFound{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .errorFound .img_notFound{
+        width: 140px;
+    }
+    .text_notfound{
+        margin-left: 10px;
+    }
+    .text_notfound .h1_notFound{
+        font-size: 24px;
+    }
+    .text_notfound .h1_notFound .span__notFound2{
+        font-size: 30px;
+    }
+    .text_notfound .h2_notFound{
+        font-size: 18px;
+    }
+    .text_notfound .h3_notFound{
+        font-size: 14px;
+    }
+}

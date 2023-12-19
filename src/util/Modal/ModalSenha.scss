@@ -1,0 +1,52 @@
+.modal_login{
+    margin-top: 140px;
+}
+
+.tituloRecuperacaoSenha{
+    color: #41748d;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+}
+
+.confirmarEmailRecuperacao{
+    color: #41748d;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+}
+
+.recuperacaoFundo1, .recuperacaoFundo2, .recuperacaoFundo3{
+    background-color: #ffedaf;
+    border:none;
+}
+
+.confirmarEmailRecuperacao input {
+    border-width: 1px;
+    border-color:#131E19;
+    margin: 3%;
+}
+
+.botaoRecuperarCancelar{
+    font-family: "Quicksand", sans-serif;
+    color: var(--black);
+    background-color: #ffedaf;
+    border: var(--black) 1px solid;
+    font-weight: 700;
+}
+
+.botaoRecuperarCancelar:hover{
+    background-color: var(--black);
+    border: 1.5px solid var(--white);
+}
+
+.botaoRecuperarConfirmar{
+    font-family: "Quicksand", sans-serif;
+    color: var(--black);
+    background-color: var(--yellow);
+    border: none;
+    font-weight: 700;
+}
+
+.botaoRecuperarConfirmar:hover{
+    background-color: var(--blue);
+    color: var(--white);
+}

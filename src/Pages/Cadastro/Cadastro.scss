@@ -1,0 +1,445 @@
+/* Fundo */
+
+.fundo_cadastro {
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 100vh;
+    padding: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to left, #FF9C41, #FFC658);
+    width: 100%;
+    height: 100vh;
+    position: relative; /* Adicionado position */
+  }
+  
+  .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  @keyframes animate {
+    0% {
+      opacity: 1;
+      border-radius: 100%;
+      transform: translateY(0) rotate(0deg);
+    }
+    100% {
+      opacity: 0;
+      border-radius: 50%;
+      transform: translateY(-1000px) rotate(720deg);
+    }
+  }
+  
+  .circles div {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; /* Adicionado border-radius para criar bolas redondas */
+    background: rgba(255, 255, 255, 0.2);
+    bottom: -150px;
+    animation: animate 25s linear infinite;
+  }
+  
+  .circles div:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation: 0s;
+  }
+  
+  .circles div:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation: 2s;  
+    animation-duration: 12s;
+  }
+  
+  .circles div:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;  
+  }
+  
+  .circles div:nth-child(4){
+    left: 80%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+  }
+  
+  .circles div:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;    
+  }
+  
+  .circles div:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;  
+    
+  }
+  
+  .circles div:nth-child(7){
+    left: 30%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;    
+  }
+  
+  .circles div:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;  
+  }
+  
+  .circles div:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;  
+  }
+  
+  .circles div:nth-child(10){
+    left: 7%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;  
+  }
+  
+  .circles div:nth-child(11){
+    left: 20%;
+    width: 120px;
+    height: 120px;
+    animation-delay: 0s;
+    animation-duration: 19s;  
+  }
+  
+  .circles div:nth-child(12){
+    left: 5%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;    
+  }
+
+.fundo_login {
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 100vh;
+    padding: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to left, #41748D, #335D7B);
+    width: 100%;
+    height: 100vh;
+    position: relative; /* Adicionado position */
+  }
+  
+  .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  @keyframes animate {
+    0% {
+      opacity: 1;
+      border-radius: 100%;
+      transform: translateY(0) rotate(0deg);
+    }
+    100% {
+      opacity: 0;
+      border-radius: 50%;
+      transform: translateY(-1000px) rotate(720deg);
+    }
+  }
+  
+  .circles div {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; /* Adicionado border-radius para criar bolas redondas */
+    background: rgba(255, 255, 255, 0.2);
+    bottom: -150px;
+    animation: animate 25s linear infinite;
+  }
+  
+  .circles div:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation: 0s;
+  }
+  
+  .circles div:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation: 2s;  
+    animation-duration: 12s;
+  }
+  
+  .circles div:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;  
+  }
+  
+  .circles div:nth-child(4){
+    left: 80%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+  }
+  
+  .circles div:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;    
+  }
+  
+  .circles div:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;  
+    
+  }
+  
+  .circles div:nth-child(7){
+    left: 30%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;    
+  }
+  
+  .circles div:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;  
+  }
+  
+  .circles div:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;  
+  }
+  
+  .circles div:nth-child(10){
+    left: 7%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;  
+  }
+  
+  .circles div:nth-child(11){
+    left: 20%;
+    width: 120px;
+    height: 120px;
+    animation-delay: 0s;
+    animation-duration: 19s;  
+  }
+  
+  .circles div:nth-child(12){
+    left: 5%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;    
+  }
+  
+
+.conteudo_cadastro {
+    width: 50%;
+    height: 75vh;
+    background-color: #ffeeaf;
+    border: 0px solid #fff;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+
+/*Parte 1*/
+
+.logo_cadastro {
+    width: 10vh;
+    height: 3vh;
+    align-self: flex-start;
+    margin-left: 3vh;
+    margin-top: 1vh;
+}
+
+.titulo_cadastro strong{
+    font-family: "Nunito", sans-serif;
+    margin-top: 3vh;
+    font-weight: 700;
+    font-size: 4vh;
+    margin-bottom: 3vh;
+}
+
+.conteudo_renderizado_cadastro {
+    transition: opacity 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: space-between;
+}
+
+.texto_fria_cadastro {
+    font-family: "Quicksand", sans-serif;
+    font-size: large;
+    width: 50%;
+    margin-top: 5vw;
+}
+
+.continuar_cadastro {
+    background-color: #FFC658;
+    font-size: 18px;
+    border-radius: 10px;
+    color: #131E19;
+    width: 35vh;
+    height: 8%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.continuar_cadastro:hover {
+    background-color: #41748d;
+    font-size: large;
+    border-radius: 10px;
+    color: #f3fffd;
+    width: 35vh;
+    height: 8%;
+    margin-inline: auto;
+}
+
+
+.ja_tem_uma_conta_cadastro {
+    font-size: 16px;
+    padding-bottom: 1vh;
+}
+
+/*Parte 2 e 3*/
+
+.inputs_cadastro {
+  display: inline-flex;
+}
+
+.titulo_cadastro_titulo2{
+    font-family: "Nunito", sans-serif;
+    margin-top: 0.1vh;
+    font-weight: 500;
+    font-size: 3.5vh;
+    margin-bottom: 3vh;
+    padding: 6vh;
+}
+
+.input_usuario_cadastro,
+.input_senha_confimar_cadastro {
+    height: 7.4vh;
+    margin-top: 30px;
+    text-align: left;
+    align-self: center;
+    color: #41748d;
+    background-color: #ffedaf;
+    border: 1px solid var(--black);
+    font-size: x-large;
+    border-radius: 10px;
+}
+
+.input_email_cadastro,
+.input_senha_cadastro {
+    height: 7.4vh;
+    margin-top: -5vh;
+    text-align: left;
+    align-self: center;
+    color: #41748d;
+    background-color: #ffedaf;
+    border: 1px solid var(--black);
+    font-size: x-large;
+    border-radius: 10px;
+}
+
+.icone_input_email,
+.icone_input_senha{
+    display: inline-flex;
+    transform: scale(1.5);
+    align-self: flex-start;
+    margin-bottom: 8%;
+    margin-right: 2%;
+}
+
+.icone_input_usuario,
+.icone_input_confirmar_senha{
+  display: inline-flex;
+    transform: scale(1.5);
+    align-self: flex-start;
+    margin-top: 10%;
+    margin-right: 2%;
+}
+
+/*Parte 4*/
+
+.botoes_etapa4 {
+    justify-content: space-between;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+}
+
+.botao_etapa4 {
+    background-color: #ffc658;
+    border: 1px solid #000;
+    font-size: large;
+    border-radius: 10px;
+    color: #000;
+    width: 28%;
+    margin-inline: auto;
+}
+
+.mensagem_erro{
+  color: rgba(255, 0, 0, 0.628) ;
+  margin-top: 1%;
+}

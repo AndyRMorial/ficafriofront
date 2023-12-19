@@ -1,0 +1,38 @@
+@import './settings.scss';
+/* #main{  
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    min-height: 100%;
+    background-color: #F3FFFD;
+}
+#main #header {
+    flex-grow: 0;
+    flex-basis: auto;
+}
+#main #body {
+    background-color: #F3FFFD;
+ 
+    padding-bottom: 2.5rem;
+
+}
+ */
+
+#main {
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: var(--white);
+  
+  /* position: fixed; top: 0; left: 0; */
+  
+}
+
+#main2 {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: var(--white);  
+    position: fixed; top: 0; left: 0;
+    
+}

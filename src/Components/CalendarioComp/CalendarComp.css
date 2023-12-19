@@ -1,0 +1,44 @@
+.rbc-calendar {
+    padding: 2%;
+}
+
+.rbc-selected {
+    background-color: var(--black) !important;
+  }
+
+.rbc-header{
+    background-color: var(--blue);
+    color: var(--white);
+    border: 1px solid var(--black);
+}
+
+.rbc-btn-group button{
+    border: 1px solid var(--black);
+}
+
+.rbc-month-view{
+    border: 1px solid var(--black); /* Adiciona uma borda vermelha sólida de 2px */ 
+}
+
+/* .rbc-day-bg{
+    background-color: var(--white);
+}
+ */
+
+ .rbc-day-bg + .rbc-day-bg{
+    border-left: 1px solid var(--black);
+ }
+ 
+.rbc-month-row {
+    border-bottom: 1px solid var(--black); /* Adiciona uma borda inferior cinza com 1px de espessura */
+  }
+
+.rbc-calendar,
+.rbc-header,
+.rbc-month-view {
+    font-size: 110%;
+}
+
+.rbc-event{
+    background-color: var(--yellow);
+}

@@ -1,0 +1,254 @@
+#nav-bar {  
+    padding-left: 20px;
+    margin: 0;
+    
+    
+}
+.navbar{
+    margin-left: 25px;
+}
+
+.botoes_navbar {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.button {
+    display: flex;
+    justify-content: end;
+    margin-left: 200px;
+
+}
+
+.botao_nav:hover {
+    background-color: var(--white);
+    border-color: var(--blue);
+    color: var(--blue);
+}
+
+.cont2 {
+    background-color: var(--yellow);
+}
+
+.cont {
+    background-color: var(--white);
+}
+
+.paginas_nav {
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.navbar2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
+
+.icone_navbar2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #41748D;
+    margin: 3%;
+    width: 200px;
+    height: 150px;
+    border-radius: 10%;
+    color: #f3fffd;
+}
+
+.icone_navbar2:hover{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0B2F51;
+    margin: 3%;
+    width: 200px;
+    height: 150px;
+    border-radius: 10%;
+    color: #f3fffd;
+}
+
+.icone_navbar2:ac{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0B2F51;
+    margin: 5%;
+    width: 250px;
+    height: 150px;
+    border-radius: 10%;
+    color: #f3fffd;
+}
+
+.temporizador_navbar2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #41748D;
+    margin: 5%;
+    width: 680px;
+    height: 150px;
+    border-radius: 17px;
+    color: #f3fffd;
+}
+
+.ampulheta {
+    width: 10vh;
+    margin: 0;
+}
+
+.pomodoro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12%;
+}
+
+.tempo_trabalho{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tempo_relaxamento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tempo_descanso {
+    background-color: #F3FFFD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    border-radius: 5%;
+    width: 75%;
+    margin: auto;
+}
+
+.botao_conograma{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+.botao_temporizador {
+    margin: auto;
+    margin-bottom: 10px;
+
+
+}
+
+.icone_temporizador{
+    margin: 0;
+    width: 15px;
+
+}
+
+.bloco_cronograma {
+    margin: 0;
+}
+
+
+
+/*estilização menu*/
+#pg-nav-dropdown {
+    border-right: 500px;
+    display: flex;
+    align-items: normal;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+
+.menu-links {
+    background-color: var(--yellow);
+    text-align: center;
+    align-self: center;
+}
+
+
+
+
+
+
+/* Mobile menu navbar landing page */
+#basic-nav-dropdown {
+    display: none;
+}
+
+@media (max-width:1200px) {
+    .links_navbar .paginas_nav {
+        display: none;
+    }
+}
+
+@media (max-width:1200px) {
+    .links_navbar {
+        display: none ;
+    }
+
+
+    .button {
+        display: none;
+    }
+
+    #basic-nav-dropdown {
+        display: flex;
+        color: var(--blue);
+        font-weight: bold;
+        margin-right: 120px;
+        text-align: center;
+        align-content: center;
+    }
+
+    .menu-buttons {
+        justify-content: end;
+        margin-left: 15px;
+    }
+}
+
+
+/*menu mobile logado*/
+
+#dropdown-nav-logado{
+    display: none;
+}
+
+@media (max-width:1200px) {
+    .links_navbar .paginas_nav {
+        display: none;
+    }
+}
+
+@media (max-width:1200px){
+    .me-auto .paginas_nav{
+        display: none;
+    }
+
+    #dropdown-nav-logado{
+        display: flex;
+        color: #41748D;
+        font-weight: bold;
+        margin-left: 120px;
+        text-align: center;
+        align-content: center;
+    }
+}
+
+/*navbar2 responsiva*/
+

@@ -1,0 +1,291 @@
+.contain_mural {
+    margin: auto;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding: 1%;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--white);
+}
+
+.titulo-mural h1 {
+    font-size: 6.5vh;
+    font-weight: 700;
+    color: var(--blue);
+}
+
+.container_quadro {
+    height: 90vh;
+    width: 100%;
+    text-align: center;
+    background-color: var(--blue);
+    border: solid 0.7vw var(--blue);
+    border-radius: 2vw;
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 10%;
+}
+
+.caixa-opts{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: var(--white);
+    width: 17%;
+    height: 100%;
+    padding: 3% 1%;
+    border-radius: 3vh;
+    gap: 3%;
+}
+
+.caixa-opts h2{
+    font-size: 2vw;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    color: var(--blue);
+}
+
+.opcoes{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.acao-re{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.acao-re button{
+    width: 47%;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.25vw solid var(--blue);
+    color: var(--blue);
+    font-weight: 700;
+    font-family: "Quicksand", sans-serif;
+    background-color: transparent;
+    border-radius: 2vh;
+    transition: 0.15s;
+}
+
+.acao-re button img{
+    filter: invert(40%) sepia(57%) saturate(354%) hue-rotate(155deg) brightness(92%) contrast(93%);
+    width: 50%;
+    transition: 0.15s;
+}
+.acao-re button:hover img{
+    filter: invert(92%) sepia(18%) saturate(129%) hue-rotate(92deg) brightness(105%) contrast(103%);
+}
+
+.acao-re button:hover{
+    background-color: var(--blue);
+    color: var(--white);
+}
+.acao-quadro{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.acao-quadro button{
+    width: 100%;
+    padding: 5%;
+    margin-bottom: 5%;
+    border-radius: 2vh;
+    font-weight: 700;
+    font-family: "Quicksand", sans-serif;
+    font-size: 110%;
+}
+
+.acao-quadro #limpar{
+    background-color: transparent;
+    border: 0.25vw solid var(--black);
+    color: var(--black);
+    transition: 0.15s;
+
+}
+
+.acao-quadro #limpar:hover {
+    background-color: var(--black);
+    color: var(--white);
+
+}
+
+.acao-quadro #salvar{
+    background-color: var(--white);
+    border: 0.25vw solid var(--blue);
+    color: var(--blue);
+    transition: 0.15s;
+}
+
+.acao-quadro #salvar:hover{
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.opcao{
+    padding: 2%;
+    background-color: var(--white);
+    border-radius: 2vh;
+    border: 0.25vw solid var(--blue);
+    font-size: 90%;
+    color: var(--blue);
+    font-weight: 600;
+    font-family: "Quicksand", sans-serif;
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 47%;
+    margin-bottom: 5%;
+    transition: 0.15s;
+}
+
+.opcao input[type='checkbox']{
+    display: none;
+}
+
+.opcao label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.opcao img{
+    width: 40%;
+    filter: invert(40%) sepia(57%) saturate(354%) hue-rotate(155deg) brightness(92%) contrast(93%);
+    transition: 0.15s;
+}
+
+.opcao:hover{
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.opcao:hover img{
+    filter: invert(92%) sepia(18%) saturate(129%) hue-rotate(92deg) brightness(105%) contrast(103%);
+}
+.opcao-selected{
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.opcao-selected img{
+    filter: invert(92%) sepia(18%) saturate(129%) hue-rotate(92deg) brightness(105%) contrast(103%);
+}
+
+.drawing-board {
+    width: 82%;
+    position: relative;
+    height: 100%;
+    background-color: var(--white);
+    border-radius: 3vh;
+}
+
+//Fim css geral. Inicio responisividade.
+@media (min-width:1680px){
+    .acao-re,.acao-quadro{
+        font-size: 130%;
+    }
+}
+@media (max-width:1185px){
+
+    .acao-re{
+        font-size: 0;
+    }
+    .opcao{
+        font-size: 0;
+    }
+
+    .titulo-mural h1{
+        font-size: 4vh;
+    }
+
+    .container_quadro{
+        height: 75vh;
+    }
+}
+
+@media (max-width:1020px){
+    .caixa-opts{
+        padding: 3% 0.5%;
+        gap: 2%;
+    }
+
+    .acao-quadro button{
+        padding: 1%;
+        border-radius: 0.5vh;
+        font-size: 90%;
+    }
+
+    .opcoes{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:710px){
+.container_quadro{
+    height: 60vh;
+}
+
+    .acao-re{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .acao-re button{
+        width: 60%;
+        margin-bottom: 5%;
+    }
+    .acao-re button img{
+        width: 50%;
+    }
+    .opcao{
+        width: 60%;
+    }
+}
+
+@media (max-width:530px){
+    .titulo-mural h1{
+        font-size: 3vh;
+    }
+
+    .caixa-opts{
+        justify-content: space-evenly;
+    }
+    .caixa-opts h2{
+        display: none;
+    }
+
+    .acao-quadro button{
+        font-size: 70%;
+    }
+    .opcao{
+        width: 70%;
+    }
+    .opcao img{
+        width: 50%;
+    }
+    .acao-re button{
+        width: 70%;
+    }
+    .acao-re button img{
+        width: 50%;
+    }
+}
